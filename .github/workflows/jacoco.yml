@@ -60,7 +60,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Get the Coverage info
+    - name: Get the Coverage inf
       run: |
         echo "Total coverage ${{ steps.jacoco.outputs.coverage-overall }}"
         echo "Changed Files coverage ${{ steps.jacoco.outputs.coverage-changed-files }}"
